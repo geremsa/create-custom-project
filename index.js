@@ -110,10 +110,8 @@ async function validateProjectType(type) {
 
 async function cloneRemoteProject() {
   try {
-    //console.log("\x1b[33m", "Downloading the project structure...", "\x1b[0m");
     await runExecCommand(`git clone --depth 1 ${repo} ${projectName}`);
-    process.chdir(projectPath);
-
+    //process.chdir(projectPath);
     // console.log("\x1b[34m", "Installing dependencies...", "\x1b[0m");
     //await runExecCommand("npm install");
   } catch (error) {
