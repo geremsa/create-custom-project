@@ -91,9 +91,9 @@ async function getProjectType() {
 async function validateProjectType(type) {
   const loading = createSpinner("Creating project...").start();
   if (type === "Web App") {
-    repo = "https://github.com/geremsa/video-meeting-app.git";
-  } else if (type === "Storybook Library") {
     repo = "https://github.com/geremsa/onetextaway-chat-app.git";
+  } else if (type === "Storybook Library") {
+    repo = "https://github.com/chromaui/storybook-template-react.git";
   } else {
     repo = "https://github.com/geremsa/gatsby-starter-default.git";
   }
